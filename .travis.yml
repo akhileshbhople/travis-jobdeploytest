@@ -13,5 +13,5 @@ matrix:
    
 script:
   - if [ "$TRAVIS_OS_NAME" == "linux-ppc64le" ]; then whoami; fi
-  - if [ "$TRAVIS_OS_NAME" == "linux" ]; then whoami; arch; echo $HOSTTYPE; fi
+  - if [ "$TRAVIS_OS_NAME" == "linux" ]; then whoami; arch; echo $HOSTTYPE $TRAVIS_OS_NAME; fi
 
