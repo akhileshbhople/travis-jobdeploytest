@@ -1,4 +1,4 @@
-language: bash
+language: go
 matrix:
   include:
     - arch: ppc64le # power queue name
