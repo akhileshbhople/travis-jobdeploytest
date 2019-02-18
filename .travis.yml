@@ -7,6 +7,6 @@ matrix:
       dist: xenial
    
 script:
-  - sh bin/test-wget.sh
+  - sh bin/test-wget-docker.sh
 # - if [ "$TRAVIS_OS_NAME" == "linux-ppc64le" ]; then whoami; fi
 # - if [ "$TRAVIS_OS_NAME" == "linux" ]; then whoami; arch; echo $HOSTTYPE $TRAVIS_OS_NAME; perlbrew --version; perlbrew list; fi
