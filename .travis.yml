@@ -8,6 +8,9 @@ matrix:
       dist: xenial
    
 script:
-  - sh bin/test-wget-docker.sh
+#  - sh bin/test-wget-docker.sh
 # - if [ "$TRAVIS_OS_NAME" == "linux-ppc64le" ]; then whoami; fi
 # - if [ "$TRAVIS_OS_NAME" == "linux" ]; then whoami; arch; echo $HOSTTYPE $TRAVIS_OS_NAME; perlbrew --version; perlbrew list; fi
+#  - if [ "$HOSTTYPE" == "powerpc64le" ]; then whoami; arch; echo $HOSTTYPE $TRAVIS_OS_NAME; fi
+  - service apparmor status
+  - aa-status
